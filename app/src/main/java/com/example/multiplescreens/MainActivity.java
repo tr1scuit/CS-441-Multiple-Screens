@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.os.Bundle;
 
+// App goals: Simple maze with navigation, text prompts, inventory.
+
 public class MainActivity extends AppCompatActivity {
 
     Button forwardButton;

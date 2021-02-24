@@ -10,27 +10,28 @@ import android.os.Bundle;
 
 public class RoomA extends AppCompatActivity {
 
-    Button forwardButton;
-    Button leftButton;
-    Button rightButton;
-    Button backButton;
-    Button inspectButton;
+    Button fButton;
+    Button lButton;
+    Button rButton;
+    Button bButton;
+    Button inButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_room_a);
 
-        forwardButton = (Button)findViewById(R.id.ButtonFront);
-        leftButton = (Button)findViewById(R.id.ButtonLeft);
-        rightButton = (Button)findViewById(R.id.ButtonRight);
-        backButton = (Button)findViewById(R.id.ButtonBack);
-        inspectButton = (Button)findViewById(R.id.ButtonInspect);
+        fButton = (Button)findViewById(R.id.ButtonFront);
+        lButton = (Button)findViewById(R.id.ButtonLeft);
+        rButton = (Button)findViewById(R.id.ButtonRight);
+        bButton = (Button)findViewById(R.id.ButtonBack);
+        inButton = (Button)findViewById(R.id.ButtonInspect);
 
-        backButton.setOnClickListener(new View.OnClickListener(){
+
+        bButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(RoomA.this, MainActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 
