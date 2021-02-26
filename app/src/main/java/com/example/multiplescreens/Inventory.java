@@ -17,6 +17,7 @@ public class Inventory {
     public void setGold(int amt){
         gold = amt;
     }
+    public void addGold(int amt) { gold += amt;}
     public int getGold(){
         return this.gold;
     }

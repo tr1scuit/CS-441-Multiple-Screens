@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         forwardButton = (Button)findViewById(R.id.Button1);
-        inspectButton = (Button)findViewById(R.id.Button2);
 
         // (switch screen/activity) opens next room
         forwardButton.setOnClickListener(new View.OnClickListener(){
