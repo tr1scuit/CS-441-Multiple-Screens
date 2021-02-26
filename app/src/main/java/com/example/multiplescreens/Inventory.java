@@ -36,10 +36,19 @@ public class Inventory {
 
     public String getItem(int a){
         if(items.size() >= a){
-            return "Wrong slot!";
+            return "Nothing!";
         } else {
             return items.get(a);
         }
+    }
+
+    public int findItem(String str){
+        for(int x = 0; x < items.size(); x++){
+            if(items.get(x).equals(str)){
+                return x;
+            }
+        }
+        return -1;
     }
 
     public void clearInventory(){

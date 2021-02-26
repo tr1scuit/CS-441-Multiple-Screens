@@ -36,8 +36,15 @@ public class RoomHandler {
             //ROOMS.get(10).getItems().add("Key B");
             ROOMS.add(new Room(80, new ArrayList<String>(), "You've entered a cellar of wine, with a chest to your right. Inside the chest is gold and a key!"));
             ROOMS.get(11).getItems().add("Key");
+            ROOMS.add(new Room(80, new ArrayList<String>(), "FREEDOM!"));
         }
         return (ROOMS);
+    }
+
+    public static void resetInstance(){
+        if (ROOMS != null){
+            ROOMS = null;
+        }
     }
 
 }

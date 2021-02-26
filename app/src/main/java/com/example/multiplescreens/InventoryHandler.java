@@ -12,4 +12,10 @@ public class InventoryHandler {
             return (INVENTORY);
     }
 
+    public static void resetInstance(){
+        if (INVENTORY != null){
+            INVENTORY = null;
+        }
+    }
+
 }

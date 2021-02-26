@@ -15,8 +15,6 @@ import java.util.ArrayList;
 
 public class RoomA extends AppCompatActivity {
 
-
-
     private int roomNumber = 0;
 
     Button fButton;
@@ -38,6 +36,25 @@ public class RoomA extends AppCompatActivity {
         inspButton = (Button)findViewById(R.id.ButtonInspect);
         invButton = (Button)findViewById(R.id.ButtonInventory);
 
+
+        fButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(RoomA.this, RoomE.class);
+                startActivity(intent);
+            }
+        });
+        lButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(RoomA.this, RoomB.class);
+                startActivity(intent);
+            }
+        });
+        rButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent intent = new Intent(RoomA.this, RoomK.class);
+                startActivity(intent);
+            }
+        });
 
         bButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

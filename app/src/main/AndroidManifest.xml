@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MultipleScreens">
         <activity android:name=".RoomA"></activity>
+        <activity android:name=".RoomB"></activity>
+        <activity android:name=".RoomC"></activity>
+        <activity android:name=".RoomD"></activity>
+        <activity android:name=".RoomE"></activity>
+        <activity android:name=".RoomF"></activity>
+        <activity android:name=".RoomG"></activity>
+        <activity android:name=".RoomH"></activity>
+        <activity android:name=".RoomI"></activity>
+        <activity android:name=".RoomJ"></activity>
+        <activity android:name=".RoomK"></activity>
+        <activity android:name=".RoomL"></activity>
+        <activity android:name=".RoomEscape"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
